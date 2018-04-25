@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "start-prod": " pm2 start ./node_modules/http-server/bin/http-server -- dist -p 8081"
+    "build": "parcel build index.html --public-url=/raspberry-player",
+    "start-prod": "pm2 start ./node_modules/http-server/bin/http-server -- dist -p 8083"
   },
   "author": "",
   "license": "ISC",
