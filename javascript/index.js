@@ -30,7 +30,7 @@ if ('webkitSpeechRecognition' in window) {
     }
 
     recognition.onend = function () {
-        var startIndex = script.indexOf('') + 2;
+        var startIndex = script.indexOf('播放') + 2;
         var songName = script.substr(startIndex);
         songDb.set(songName);
     }
