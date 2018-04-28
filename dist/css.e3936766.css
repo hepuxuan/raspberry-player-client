@@ -1,0 +1,31 @@
+html {
+    font: 14px Helvetica, Tahoma, Arial, STXihei, "\534E\6587\7EC6\9ED1", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", SimSun, "\5B8B\4F53", Heiti, "\9ED1\4F53", sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+.button {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 0.25em;
+    height: 2.5em;
+    line-height: 2.5;
+    margin: 0.25em;
+    padding: 0 1em;
+    width: 14em;
+    text-align: center;
+}
+
+.body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

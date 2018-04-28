@@ -32,6 +32,9 @@ if ('webkitSpeechRecognition' in window) {
     recognition.onend = function () {
         var startIndex = script.indexOf('播放') + 2;
         var songName = script.substr(startIndex);
+        if (songName === '下一首') {
+            songName = songName + new Date().getTime();
+        }
         songDb.set(songName);
     }
 }
